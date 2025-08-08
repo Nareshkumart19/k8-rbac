@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  namespace: roboshop
+  namespace: roboshop1
   name: roboshop-trainee-king
 rules:
 - apiGroups: [""] # "" indicates the core API group
@@ -17,7 +17,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: roboshop-trainee-king
-  namespace: roboshop
+  namespace: roboshop1
 subjects:
 # You can specify more than one "subject"
 - kind: User
