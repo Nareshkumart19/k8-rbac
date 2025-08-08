@@ -7,8 +7,8 @@ data:
       - system:nodes
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
-  - groups:
-    - trainee
+    - groups:
+      - trainee
     userarn: arn:aws:iam::090074823871:user/ramesh
     username: ramesh
 kind: ConfigMap
