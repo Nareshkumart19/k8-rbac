@@ -10,7 +10,7 @@ data:
     - groups:
       - roboshop-trainee-king
     userarn: arn:aws:iam::090074823871:user/nareshkumar
-    username: raju
+    username: nareshkumar
 kind: ConfigMap
 metadata:
   creationTimestamp: "2025-08-08T12:09:28Z"
