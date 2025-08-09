@@ -67,7 +67,7 @@ kind: ClusterRole
 metadata:
   name: roboshop-cluster-role
 rules:
-- apiGroups: [""]
+- apiGroups: ["v1"]
   resources: ["persistentvolumes "]
   verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 
