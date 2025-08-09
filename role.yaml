@@ -62,12 +62,12 @@ roleRef:
 
 ---
 
-piVersion: rbac.authorization.k8s.io/v1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: roboshop-cluster-role
 rules:
-- apiGroups: ["v1"]
+- apiGroups: [""]
   resources: ["persistentvolumes "]
   verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 
