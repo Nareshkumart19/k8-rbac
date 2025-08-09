@@ -1,4 +1,4 @@
----
+
 apiVersion: v1
 data:
   mapRoles: |
@@ -14,10 +14,7 @@ data:
       username: jaggu
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2025-08-09T04:29:39Z"
+  creationTimestamp: "2025-08-09T08:23:42Z"
   name: aws-auth
   namespace: kube-system
-  uid: bedd8051-7b4e-4aa0-8153-aa8329551d3d
-
-
-#arn:aws:iam::090074823871:user/raju
+  uid: 9515ac59-19f8-4b2d-ac4b-72500bbc2dce
