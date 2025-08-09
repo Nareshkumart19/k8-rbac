@@ -11,7 +11,7 @@ data:
     - groups:
       - system: pod-access-trainee
       userarn: arn:aws:iam::090074823871:user/jaggu
-      username: admin
+      username: jaggu
 kind: ConfigMap
 metadata:
   creationTimestamp: "2025-08-09T04:29:39Z"
