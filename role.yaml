@@ -9,13 +9,27 @@ rules:
 - apiGroups: [""]
   resources: ["pods"]
   verbs: ["get", "list", "watch"]
-rules:
-- apiGroups: ["apps"]
-  #
-  # at the HTTP level, the name of the resource for accessing Deployment
-  # objects is "deployments"
-  resources: ["deployments"]
-  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+
+
+---
+
+#apiVersion: rbac.authorization.k8s.io/v1
+#kind: Role
+#metadata:
+#  namespace: roboshop
+#  name: pod-access-trainee
+#rules:
+#- apiGroups: [""]
+#  resources: ["pods"]
+#  verbs: ["get", "list", "watch"]
+##deployment
+#rules:
+#- apiGroups: ["apps"]
+#  #
+#  # at the HTTP level, the name of the resource for accessing Deployment
+#  # objects is "deployments"
+#  resources: ["deployments"]
+#  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 
 
 ---
