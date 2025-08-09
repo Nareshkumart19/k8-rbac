@@ -6,8 +6,8 @@ metadata:
   namespace: roboshop
   name: sa-reader
 rules:
-- apiGroups: [""]  # indicates the core API group
-  resources: [""]  # nouns
+- apiGroups: ["*"]  # indicates the core API group
+  resources: ["*"]  # nouns
   verbs: ["get", "list", "watch"]   # actions
   # objects is "deployments"
 
