@@ -24,7 +24,6 @@ subjects:
 # You can specify more than one "subject"
 - kind: ServiceAccount
   name: roboshop-admin-screat-reader # "name" is case sensitive
-  apiGroup: rbac.authorization.k8s.io
 roleRef:
   # "roleRef" specifies the binding to a Role / ClusterRole
   kind: Role #this must be Role or ClusterRole
@@ -34,14 +33,14 @@ roleRef:
 
 apiVersion: v1
 kind: Pod
-metadata: 
+metadata:
   name: aws-cli
   namespace: roboshop
-  labels: 
+  labels:
     purpose: sa
 spec:
-  ServiceAccount:  roboshop-admin-screat-reader
+  serviceAccountName: roboshop-admin-screat-reader
   containers:
   - name: awscli
     image: amazon/aws-cli
-    command: ["sleep", "5000" ]
+    command: ["sleep", "5000"]
